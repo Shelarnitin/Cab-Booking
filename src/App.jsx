@@ -6,7 +6,6 @@ import Dashboard from './pages/Dashboard';
 import BookCab from './pages/BookCab';
 import Bookings from './pages/Bookings';
 import Drivers from './pages/Drivers';
-import Navbar from './components/Navbar';
 
 export default function App() {
   return (
@@ -20,10 +19,9 @@ export default function App() {
         <Route path="book" element={<BookCab />} />
         <Route path="bookings" element={<Bookings />} />
         <Route path="drivers" element={<Drivers />} />
-        <Route path="navbar" element={<Navbar />} />
       </Route>
 
-      {/* fallback: redirect unknown paths to dashboard or login */}
+      {/* fallback: redirect unknown paths to login */}
       <Route path="*" element={<Login />} />
     </Routes>
   );

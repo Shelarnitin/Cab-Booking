@@ -9,3 +9,6 @@ export const createBooking = (data) => API.post("/bookings", data);
 
 // Fetch all bookings
 export const getBookings = () => API.get("/bookings");
+
+// Delete Bookings
+export const deleteBooking = (id) => API.delete(`/bookings/${id}`);

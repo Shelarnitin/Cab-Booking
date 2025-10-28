@@ -7,6 +7,10 @@ import BookCab from './pages/BookCab';
 import Bookings from './pages/Bookings';
 import Drivers from './pages/Drivers';
 import ProtectedRoute from './components/ProtectedRoute';
+import ViewDrivers from "./pages/ViewDrivers";
+import AddDriver from "./pages/AddDriver";
+
+
 
 export default function App() {
   return (
@@ -49,6 +53,23 @@ export default function App() {
           }
         />
       </Route>
+      <Route
+        path="add-driver"
+        element={
+          <ProtectedRoute>
+            <AddDriver />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+      path="viewdrivers"
+      element={
+        <ProtectedRoute>
+          <ViewDrivers />
+        </ProtectedRoute>
+      }
+    />
+
 
       {/* fallback route */}
       <Route path="*" element={<Login />} />

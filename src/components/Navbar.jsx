@@ -16,7 +16,8 @@ export default function Navbar() {
         <Link to="/dashboard" className="hover:text-gray-200">Dashboard</Link>
         <Link to="/book" className="hover:text-gray-200">Book Cab</Link>
         <Link to="/bookings" className="hover:text-gray-200">Bookings</Link>
-        <Link to="/drivers" className="hover:text-gray-200">Drivers</Link>
+        <Link to="/viewdrivers" className="hover:text-gray-200">viewdrivers</Link>
+        <Link to="/add-driver" className="hover:text-gray-200">adddriver</Link>
         <button
           onClick={handleLogout}
           className="hover:text-gray-200 border border-white px-2 py-1 rounded"

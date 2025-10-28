@@ -12,3 +12,8 @@ export const getBookings = () => API.get("/bookings");
 
 // Delete Bookings
 export const deleteBooking = (id) => API.delete(`/bookings/${id}`);
+
+// Drivers API
+export const getDrivers = () => API.get("/drivers");
+export const addDriver = (data) => API.post("/drivers", data);
+

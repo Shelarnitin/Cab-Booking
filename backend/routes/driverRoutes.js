@@ -3,7 +3,7 @@ import Driver from "../models/Driver.js";
 
 const router = express.Router();
 
-// ✅ GET all drivers
+//  GET all drivers
 router.get("/", async (req, res) => {
   try {
     const drivers = await Driver.find();
@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// ✅ POST new driver (optional - use for testing)
+//  POST new driver (optional - use for testing)
 router.post("/", async (req, res) => {
   try {
     const driver = new Driver(req.body);

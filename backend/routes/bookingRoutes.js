@@ -13,7 +13,7 @@ router.delete("/:id", async (req, res) => {
     console.log("🗑️ Deleting booking with ID:", req.params.id);
     const deleted = await Booking.findByIdAndDelete(req.params.id);
     if (!deleted) {
-      console.log("❌ Booking not found");
+      console.log(" Booking not found");
       return res.status(404).json({ message: "Booking not found" });
     }
 

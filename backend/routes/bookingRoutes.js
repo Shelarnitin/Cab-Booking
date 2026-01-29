@@ -17,7 +17,7 @@ router.delete("/:id", async (req, res) => {
       return res.status(404).json({ message: "Booking not found" });
     }
 
-    console.log("✅ Booking deleted successfully:", deleted);
+    console.log(" Booking deleted successfully:", deleted);
     res.json({ message: "Booking deleted successfully" });
   } catch (error) {
     console.error("🔥 Error deleting booking:", error.message);

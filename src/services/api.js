@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // backend base URL
+  baseURL: "https://cab-booking-oqy4.onrender.com/api", // backend base URL
 });
 
 // Create new booking
